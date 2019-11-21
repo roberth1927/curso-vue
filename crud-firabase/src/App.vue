@@ -4,10 +4,8 @@
        <router-link :to="{name: 'inicio'}">
            <img src="@/assets/logo.png" alt="">
       </router-link>
-   
     </div>
      
-
     <router-view/>
   </div>
 </template>
