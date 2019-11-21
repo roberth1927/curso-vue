@@ -7,19 +7,16 @@ const routes = [
   {
     path: '/',
     name: 'inicio',
-    
     component: () => import('../views/Inicio.vue')
   },
   {
     path: '/editar/:id',
     name: 'editar',
-    
     component: () => import('../views/Editar.vue')
   },
   {
     path: '/agregar',
     name: 'agregar',
-    
     component: () => import('../views/Agregar.vue')
   }
 ]
@@ -27,5 +24,4 @@ const routes = [
 const router = new VueRouter({
   routes
 })
-
 export default router

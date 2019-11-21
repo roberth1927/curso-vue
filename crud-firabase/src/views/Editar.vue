@@ -8,7 +8,6 @@
                 <input type="text" class="form-control" v-model="tarea.nombre">
             </div>
             <button type="submit" class="btn btn-primary mb-2">Editar</button>
-            {{tarea}}
         </form>
     </div>
 </template>

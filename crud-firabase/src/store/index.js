@@ -19,8 +19,8 @@ export default new Vuex.Store({
     },
 
     /*
-    para actulizar las tareas se ejecutaesta mutacion
-    la cual filtra y devuelve las tareas difentes al id que le 
+    para actulizar las tareas se ejecuta esta mutacion
+    la cual filtra y devuelve las tareas diferentes al id que le 
     llega por parametro
     */
     eliminarTarea(state, id){
