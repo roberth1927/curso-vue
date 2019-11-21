@@ -1,16 +1,21 @@
- var firebaseConfig = {
-    apiKey: "AIzaSyDSES-R2Xw3GH1-XhXzhUBQP0aUyJJ7nkM",
-    authDomain: "crud-udemy-a3c92.firebaseapp.com",
-    databaseURL: "https://crud-udemy-a3c92.firebaseio.com",
-    projectId: "crud-udemy-a3c92",
-    storageBucket: "crud-udemy-a3c92.appspot.com",
-    messagingSenderId: "122307934348",
-    appId: "1:122307934348:web:f7ed7843a16e50785ae3a9",
-    measurementId: "G-8NV8D236NQ"
+ import firebase from 'firebase/app'
+ import firestore from 'firebase/firestore'
+ const config = {
+  apiKey: "AIzaSyBUMdAsl8MHNkkdGLpVBZmtzTMoiq5rcN0",
+  authDomain: "crud-udemy-vue-7fad2.firebaseapp.com",
+  databaseURL: "https://crud-udemy-vue-7fad2.firebaseio.com",
+  projectId: "crud-udemy-vue-7fad2",
+  storageBucket: "crud-udemy-vue-7fad2.appspot.com",
+  messagingSenderId: "242746511363",
+  appId: "1:242746511363:web:0379b924e16e52650a3e36",
+  measurementId: "G-Q8H5HKDCSC"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+  const firebaseApp = firebase.initializeApp(config);
+
+  firebaseApp.firestore().settings({})
+  // firebase.analytics();
+
+  export default firebaseApp.firestore()
   
-  import firebase from 'firebase/app'
-  import firestore from 'firebase/firestore'
+  
